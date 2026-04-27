@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Gourmet</title>
+    <link rel="stylesheet" href="src/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- encabezado de la pagina -->
+    <header>
+        <div class="logo-area">
+            <h1 class="logo-texto">Fusión Gourmet</h1>
+            <p class="logo-subtitulo">Festival Gastronómico de Vanguardia</p>
+        </div>
+
+         <!-- boton hamburguesa - solo visible en celular -->
+        <button class="hamburguesa" id="btnMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#horarios">Horarios</a></li>
+                <li><a href="#sobre">El Festival</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- seccion principal con el llamado a la accion -->
+        <section id="inicio" class="hero-seccion">
+            <div class="hero-contenido">
+                <p class="hero-fecha">Bogotá · 14 al 17 de Agosto 2025</p>
+                <h2 class="hero-titulo">Una experiencia culinaria que no olvidarás</h2>
+                <p class="hero-texto">Cuatro días de talleres, catas y cenas de autor con los mejores chefs de latinoamérica. Vive la gastronomía de una manera diferente.</p>
+                <a href="#horarios" class="boton-principal">Ver programación</a>
+                <a href="#sobre" class="boton-secundario">Saber más</a>
+            </div>
+        </section>
+
+        <!-- horarios y eventos -->
+        <section id="horarios" class="seccion-horarios">
+            <div class="contenedor">
+                <h2>Programación del Festival</h2>
+                <p class="subtitulo-seccion">Estos son los eventos que tenemos preparados para ti</p>
+
+                <!-- tabla de horarios -->
+                <table class="tabla-horarios">
+                    <thead>
+                        <tr>
+                            <th>Horario</th>
+                            <th>Jueves 14</th>
+                            <th>Viernes 15</th>
+                            <th>Sábado 16</th>
+                            <th>Domingo 17</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10:00 - 12:00</td>
+                            <td>Ceremonia de apertura</td>
+                            <td>Taller de fermentación</td>
+                            <td>Cocina de fuego vivo</td>
+                            <td>Cata de cacao</td>
+                        </tr>
+                        <tr>
+                            <td>13:00 - 15:00</td>
+                            <td>Cata de vinos naturales</td>
+                            <td>Menú de autor</td>
+                            <td>Mesa del chef</td>
+                            <td>Brunch colectivo</td>
+                        </tr>
+                        <tr>
+                            <td>16:00 - 18:00</td>
+                            <td>Charla: gastronomía sostenible</td>
+                            <td>Taller de mixología</td>
+                            <td>Cocina nikkei</td>
+                            <td>Cata de aceites</td>
+                        </tr>
+                        <tr>
+                            <td>19:00 - 22:00</td>
+                            <td>Cena inaugural</td>
+                            <td>Noche de tapas</td>
+                            <td>Gran banquete</td>
+                            <td>Ceremonia de clausura</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- tarjetas de los eventos mas importantes -->
+                <div class="eventos-grid">
+
+                    <article class="tarjeta-evento">
+                        <h3>Taller de Fermentación</h3>
+                        <p class="evento-tipo">🫙 Taller práctico</p>
+                        <p>Aprende los secretos del kimchi, el miso y los fermentados artesanales con la chef Lina Morales.</p>
+                        <p class="evento-info">Viernes 15 · 10:00 am · Cupo: 20 personas</p>
+                    </article>
+
+                    <article class="tarjeta-evento tarjeta-destacada">
+                        <p class="etiqueta-destacado">⭐ Destacado</p>
+                        <h3>Gran Banquete de la Llama</h3>
+                        <p class="evento-tipo">🔥 Cena de autor</p>
+                        <p>7 tiempos con el chef Rodrigo Castillo. Una experiencia de cocina ancestral y fuego vivo que no te puedes perder.</p>
+                        <p class="evento-info">Sábado 16 · 7:00 pm · Cupo: 60 personas</p>
+                    </article>
+
+                    <article class="tarjeta-evento">
+                        <h3>Cata de Vinos Naturales</h3>
+                        <p class="evento-tipo">🍷 Cata guiada</p>
+                        <p>Un recorrido por las bodegas más innovadoras de latinoamérica con la sommelier Carolina Rivas.</p>
+                        <p class="evento-info">Jueves 14 · 1:00 pm · Cupo: 30 personas</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- informacion sobre el festival -->
+        <section id="sobre" class="seccion-sobre">
+            <div class="contenedor">
+                <h2>Sobre el Festival</h2>
+                <p class="subtitulo-seccion">Conoce la historia y los valores de Fusión Gourmet</p>
+
+                <div class="sobre-contenido">
+                    <div class="sobre-texto">
+                        <p>Fusión Gourmet es un festival gastronómico que lleva 8 años reuniendo a los chefs más creativos de latinoamérica en un solo lugar. Nació con la idea de que la comida es mucho más que alimentarse, es una forma de conectar culturas y contar historias.</p>
+
+                        <p>Cada edición del festival está pensada para sorprender tanto a los amantes de la cocina como a los profesionales del sector. Aquí encontrarás talleres prácticos, cenas de autor, catas y charlas con referentes de la gastronomía mundial.</p>
+
+                        <!-- lista de valores del festival -->
+                        <h3>Nuestra filosofía</h3>
+                        <ul class="lista-valores">
+                            <li>🌱 <strong>Sostenibilidad</strong> - Usamos ingredientes locales y de temporada</li>
+                            <li>⚗️ <strong>Innovación</strong> - Exploramos nuevas técnicas y sabores</li>
+                            <li>🤝 <strong>Comunidad</strong> - Apoyamos a pequeños productores de la región</li>
+                            <li>📖 <strong>Educación</strong> - Cada experiencia es también un aprendizaje</li>
+                        </ul>
+                    </div>
+
+                    <div class="sobre-imagen">
+                        <!-- use una imagen de fondo en el css porque no encontre como poner bien la imagen directo en html -->
+                        <div class="imagen-festival"></div>
+                        <p class="pie-imagen">Festival edición 2024 — Bogotá, Colombia</p>
+                    </div>
+                </div>
+
+                <!-- chefs del festival -->
+                <h3 class="titulo-chefs">Nuestros Chefs</h3>
+                <div class="chefs-grid">
+                    <div class="tarjeta-chef">
+                        <div class="foto-chef foto1"></div>
+                        <h4>Rodrigo Castillo</h4>
+                        <p class="chef-ciudad">Bogotá, Colombia</p>
+                        <p>Especialista en cocina de fuego y sabores ancestrales del Pacífico colombiano.</p>
+                    </div>
+                    <div class="tarjeta-chef">
+                        <div class="foto-chef foto2"></div>
+                        <h4>Lina Morales</h4>
+                        <p class="chef-ciudad">Lima, Perú</p>
+                        <p>Experta en fermentación y cocina con ingredientes amazónicos.</p>
+                    </div>
+                    <div class="tarjeta-chef">
+                        <div class="foto-chef foto3"></div>
+                        <h4>Santiago Vera</h4>
+                        <p class="chef-ciudad">Buenos Aires, Argentina</p>
+                        <p>Maestro repostero conocido por sus postres que cuentan historias.</p>
+                    </div>
+                    <div class="tarjeta-chef">
+                        <div class="foto-chef foto4"></div>
+                        <h4>Valeria Mena</h4>
+                        <p class="chef-ciudad">Ciudad de México</p>
+                        <p>Referente en cocina de mercado y maridajes creativos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- galeria de fotos y videos -->
+        <section id="galeria" class="seccion-galeria">
+            <div class="contenedor">
+                <h2>Galería</h2>
+                <p class="subtitulo-seccion">Momentos del festival que hablan por sí solos</p>
+
+                <div class="galeria-grid">
+                    <div class="foto-galeria foto-g1"></div>
+                    <div class="foto-galeria foto-g2"></div>
+                    <div class="foto-galeria foto-g3"></div>
+                    <div class="foto-galeria foto-g4"></div>
+                    <div class="foto-galeria foto-g5"></div>
+
+                    <!-- video simulado -->
+                    <div class="video-simulado">
+                        <div class="boton-play">▶</div>
+                        <p>Resumen Festival 2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- lista de patrocinadores -->
+        <section class="seccion-patrocinadores">
+            <div class="contenedor">
+                <h3>Patrocinadores principales</h3>
+                <ul class="lista-patrocinadores">
+                    <li>🏛️ Ministerio de Cultura</li>
+                    <li>🍃 Terra Natura Foods</li>
+                    <li>🍷 Viñedos del Sur</li>
+                    <li>🌿 Mercado Orgánico CO</li>
+                    <li>✈️ Avianca Experience</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- pie de pagina -->
+    <footer id="contacto">
+        <div class="footer-contenido contenedor">
+
+            <div class="footer-marca">
+                <h3>Fusión Gourmet</h3>
+                <p>Festival Gastronómico de Vanguardia</p>
+                <p>Bogotá, Colombia · Agosto 2025</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Páginas</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#horarios">Horarios</a></li>
+                    <li><a href="#sobre">El Festival</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <p>📧 hola@fusiongourmet.co</p>
+                <p>📞 +57 (1) 234 5678</p>
+                <p>📍 Centro de Convenciones Ágora, Bogotá</p>
+
+                <!-- redes sociales -->
+                <ul class="redes-sociales">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <p class="footer-copy">© 2025 Fusión Gourmet - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
