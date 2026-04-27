@@ -1,0 +1,97 @@
+/* galeria de fotos y patrocinadores */
+
+/* ---- galeria ---- */
+
+.seccion-galeria {
+    padding: 80px 0;
+    background-color: #1a1108;
+}
+
+.seccion-galeria h2 {
+    color: #f5efe3;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.seccion-galeria .subtitulo-seccion {
+    color: #8a6a4a;
+    margin-bottom: 36px;
+}
+
+/* grilla de fotos - use grid porque es mas facil para esto */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.foto-galeria {
+    height: 200px;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* colores para simular fotos mientras no tengo las imagenes reales */
+.foto-g1 { background-color: #4a3020; background-image: linear-gradient(135deg, #b87333 0%, #2e1a0e 100%); }
+.foto-g2 { background-color: #2a3a2e; background-image: linear-gradient(135deg, #4a7a5a 0%, #1a2a1e 100%); grid-column: span 2; }
+.foto-g3 { background-color: #2a3a4a; background-image: linear-gradient(135deg, #4a6a8a 0%, #1a2a3a 100%); }
+.foto-g4 { background-color: #4a3a2a; background-image: linear-gradient(135deg, #d4a057 0%, #3a2a1a 100%); }
+.foto-g5 { background-color: #3a2a4a; background-image: linear-gradient(135deg, #7a5a8a 0%, #2a1a3a 100%); }
+
+/* video simulado */
+.video-simulado {
+    background-color: #3b2e22;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    cursor: pointer;
+    border: 1px solid #b87333;
+}
+
+.boton-play {
+    font-size: 40px;
+    color: #b87333;
+    margin-bottom: 10px;
+}
+
+.video-simulado p {
+    font-size: 12.5px;
+    color: #8a6a4a;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ---- patrocinadores ---- */
+
+.seccion-patrocinadores {
+    padding: 48px 0;
+    background-color: #fff8f0;
+    border-top: 1px solid #e0d0bc;
+    text-align: center;
+}
+
+.seccion-patrocinadores h3 {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #b87333;
+    margin-bottom: 24px;
+}
+
+.lista-patrocinadores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 36px;
+}
+
+.lista-patrocinadores li {
+    font-size: 14.5px;
+    color: #5a4030;
+    font-weight: 500;
+    opacity: 0.75;
+}

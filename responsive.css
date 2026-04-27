@@ -1,0 +1,138 @@
+/* responsive - media queries para tablet y celular */
+
+/* tablet */
+@media (max-width: 1024px) {
+    .chefs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sobre-contenido {
+        flex-direction: column;
+    }
+
+    .sobre-imagen {
+        flex: none;
+        width: 100%;
+    }
+}
+
+/* celular */
+@media (max-width: 768px) {
+
+    /* --- header: vuelve el header normal (sin flex-direction column) --- */
+    header {
+        flex-direction: row;
+        gap: 0;
+        text-align: left;
+        position: sticky;
+    }
+
+    /* mostrar el boton hamburguesa */
+    .hamburguesa {
+        display: flex;
+    }
+
+    /* ocultar el nav normal y convertirlo en menu desplegable */
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1a1108;
+        border-top: 1px solid #3b2e22;
+        padding: 20px 5%;
+        z-index: 98;
+    }
+
+    /* cuando tiene la clase "abierto", el nav se muestra */
+    nav.abierto {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 14px 0;
+        font-size: 16px;
+        border-bottom: 1px solid #2a1e10;
+        color: #e8d5b5;
+    }
+
+    nav ul li:last-child a {
+        border-bottom: none;
+    }
+
+    /* resto de ajustes de celular */
+    .hero-titulo {
+        font-size: 33.5px;
+    }
+
+    .hero-seccion {
+        padding: 50px 6%;
+        min-height: auto;
+        padding-bottom: 60px;
+    }
+
+    .boton-secundario {
+        margin-top: 12px;
+        display: block;
+        text-align: center;
+    }
+
+    .boton-principal {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .eventos-grid {
+        flex-direction: column;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* en el celular la foto grande no abarca 2 columnas */
+    .foto-g2 {
+        grid-column: span 1;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .chefs-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-titulo {
+        font-size: 27px;
+    }
+
+    .chefs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .foto-g2 {
+        grid-column: span 1;
+    }
+
+    .seccion-horarios h2,
+    .seccion-sobre h2,
+    .seccion-galeria h2 {
+        font-size: 29px;
+    }
+}

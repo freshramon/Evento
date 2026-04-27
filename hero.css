@@ -1,0 +1,68 @@
+/* seccion hero - la portada principal de la pagina */
+
+.hero-seccion {
+    background-color: #1a1108;
+    /* le puse un degradado encima para que no sea tan plano */
+    background-image: linear-gradient(to bottom right, #1a1108, #3b2e22);
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+}
+
+.hero-contenido {
+    max-width: 680px;
+}
+
+.hero-fecha {
+    font-size: 12.48px;
+    color: #b87333;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.hero-titulo {
+    font-size: 51.2px;
+    color: #f5efe3;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-texto {
+    font-size: 16px;
+    color: #c9b89a;
+    line-height: 1.7;
+    margin-bottom: 32px;
+    max-width: 520px;
+}
+
+/* botones del hero */
+.boton-principal {
+    font-size: 13.6px;
+    background-color: #b87333;
+    color: white; 
+    padding: 13.5px 30px;  /*Alto, Ancho*/
+    border-radius: 4px;
+    font-weight: 600;  /*Grosor*/
+    margin-right: 14px; /*Separacion entre boton*/
+    transition: background-color 0.3s;
+}
+
+.boton-principal:hover {
+    background-color: #d4a057;
+}
+
+.boton-secundario {
+    font-size: 13.6px;
+    border: 1px solid #b87333;
+    color: #e8d5b5;
+    padding: 13px 30px;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.boton-secundario:hover {
+    border-color: #d4a057;
+    color: #d4a057;
+}
